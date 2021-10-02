@@ -13,7 +13,6 @@ export default class View {
    * @todo Finish the implementation
    */
   render(data, render = true) {
-    alert('hacked');
     if (!data || (Array.isArray(data) && data.length === 0))
       return this.renderError();
 
