@@ -563,9 +563,6 @@ const controlAddRecipe = async function(newRecipe) {
         _addRecipeViewJsDefault.default.renderError(err.message);
     }
 };
-const newFeauture = function() {
-    console.log('Welcome to the application');
-};
 const init = function() {
     _bookmarksViewJsDefault.default.addHandlerRender(controlBookmarks);
     _recipeViewJsDefault.default.addHandlerRender(controlRecipes);
@@ -574,7 +571,7 @@ const init = function() {
     _searchViewJsDefault.default.addHandlerSearch(controlSearchResults);
     _paginationViewJsDefault.default.addHendlerClick(controlPadination);
     _addRecipeViewJsDefault.default.addHandlerUpload(controlAddRecipe);
-    newFeauture();
+    console.log('Welcome');
 };
 init();
 
@@ -1490,7 +1487,7 @@ class RecipeView extends _viewJsDefault.default {
 }
 exports.default = new RecipeView();
 
-},{"./View.js":"8rtS4","url:../../img/icons.svg":"iwCpK","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","fracty":"cTuFN"}],"8rtS4":[function(require,module,exports) {
+},{"./View.js":"8rtS4","url:../../img/icons.svg":"iwCpK","fracty":"cTuFN","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc"}],"8rtS4":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _iconsSvg = require("url:../../img/icons.svg");
